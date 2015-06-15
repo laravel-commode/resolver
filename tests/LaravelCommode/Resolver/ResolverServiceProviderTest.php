@@ -20,7 +20,7 @@ class ResolverServiceProviderTest extends \PHPUnit_Framework_TestCase
     {
         $this->application = $this->getMock(
             'Illuminate\Foundation\Application',
-            ['bind']
+            ['bind', 'alias']
         );
         $this->testInstance = new ResolverServiceProvider($this->application);
 
@@ -43,6 +43,9 @@ class ResolverServiceProviderTest extends \PHPUnit_Framework_TestCase
             ->with(ResolverServiceProvider::PROVIDES_RESOLVER, $this->callback(function ($closure) {
                 return $closure($this->application) instanceof Resolver;
             }));
+
+        $this->application->expects($this->any())->method('alias')
+            ->with('CommodeResolver', ResolverFacade::class);
 
         $this->assertContains(ResolverServiceProvider::PROVIDES_RESOLVER, $this->testInstance->provides());
     }

@@ -26,6 +26,8 @@ class ResolverServiceProvider extends ServiceProvider
         $this->app->bind(self::PROVIDES_RESOLVER, function (Application $application) {
             return new Resolver($application);
         });
+
+        $this->app->alias('CommodeResolver', ResolverFacade::class);
     }
 
     /**
