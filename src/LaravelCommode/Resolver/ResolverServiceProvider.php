@@ -8,12 +8,13 @@ use Illuminate\Support\ServiceProvider;
 class ResolverServiceProvider extends ServiceProvider
 {
     const PROVIDES_RESOLVER = 'laravel-commode.resolver';
+
     /**
      * Indicates if loading of the provider is deferred.
      *
      * @var bool
      */
-    protected $defer = false;
+    protected $defer = true;
 
     /**
      * Register the service provider.
