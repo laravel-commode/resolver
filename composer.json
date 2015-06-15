@@ -11,10 +11,13 @@
         "php": ">=5.5.0",
         "illuminate/support": "5.1.*"
     },
+    "require-dev": {
+        "satooshi/php-coveralls": "dev-master"
+    },
     "autoload": {
         "psr-4": {
             "LaravelCommode\\Resolver\\": "src/LaravelCommode/Resolver"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
