@@ -16,7 +16,7 @@ use ReflectionParameter;
  * resolvable closures.
  *
  * @author Volynov Andrey
- * @package LaravelCommode\Common\Resolver
+ * @package LaravelCommode\Resolver
  */
 class Resolver
 {
