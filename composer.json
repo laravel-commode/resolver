@@ -1,0 +1,20 @@
+{
+    "name": "laravel-commode/resolver",
+    "description": "",
+    "authors": [
+        {
+            "name": "dubpub",
+            "email": "dubpubz@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelCommode\\Resolver\\": "src/LaravelCommode/Resolver"
+        }
+    },
+    "minimum-stability": "dev"
+}
