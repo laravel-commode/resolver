@@ -1,6 +1,8 @@
 #Commode: Resolver
 
 [![Build Status](https://travis-ci.org/laravel-commode/resolver.svg?branch=master)](https://travis-ci.org/laravel-commode/resolver)
+[![Code Climate](https://codeclimate.com/github/laravel-commode/resolver/badges/gpa.svg)](https://codeclimate.com/github/laravel-commode/resolver)
+[![Coverage Status](https://coveralls.io/repos/laravel-commode/resolver/badge.svg?branch=master)](https://coveralls.io/r/laravel-commode/resolver?branch=master)
 
 >**_laravel-commode/resolver_** is a [method|closure] resolver class/service for laravel-commode package 
 environment or for laravel 5.1 standalone. 
