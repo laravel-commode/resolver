@@ -9,7 +9,7 @@ environment or for laravel 5.1 standalone.
 
 + <a href="#installing">Installing</a>
 + <a href="#usage">Usage examples</a>
-+ <a href="#controller">Alias references</a>
++ <a href="#aliases">Alias references table</a>
 
 
 ##<a name="installing">Installing</a>
@@ -179,3 +179,24 @@ Here's an example of using it.
         //      2 =>  object(MyApp\DAL\Concrete\Eloquent\Models\Account)
         //  boolean true
 ```
+
+##<a name="aliases">Alias references table</a>
+
+<table width="100%">
+    <thead>
+    <tr>
+        <th>Class</th>
+        <th>Service alias</th>
+        <th>Service provider</th>
+        <th>Facade</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><code>LaravelCommode\Resolver\Resolver</code></td>
+        <td>laravel-commode.resolver</td>
+        <td><code>LaravelCommode\Resolver\ResolverServiceProvider</code></td>
+        <td><code>CommodeResolver</code></td>
+    </tr>
+    </tbody>
+</table>
